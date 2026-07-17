@@ -51,9 +51,9 @@ async def report_endpoint(
 async def chat_endpoint(
     req: ChatRequest, session: AsyncSession = Depends(get_session)
 ) -> ChatResult:
-    aggregate = await transaction_repo.category_aggregate(session, month=None)
+    context = await transaction_repo.chat_context(session)
     try:
-        answer = llm.answer_chat(aggregate, req.message)
+        answer = llm.answer_chat(context, req.message)
     except llm.LLMUnavailable as exc:
         raise HTTPException(status.HTTP_503_SERVICE_UNAVAILABLE, str(exc)) from exc
     return ChatResult(answer=answer)

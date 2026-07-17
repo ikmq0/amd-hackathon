@@ -23,9 +23,21 @@ export interface TransactionOut {
   cat: string;
   city: string;
   date: string;
-  amt: number;
+  amt: number; // signed: negative = spend, positive = income
   acc: number;
   resolved: boolean;
+  type: "purchase" | "transfer" | "income" | "cash";
+  income: boolean;
+}
+
+export interface MonthOption {
+  key: string; // 'YYYY-MM'
+  label: string; // Arabic month + year
+}
+
+export interface TransactionFilters {
+  months: MonthOption[];
+  cities: string[];
 }
 
 export interface MerchantStats {

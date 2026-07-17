@@ -74,7 +74,8 @@ def generate_report(aggregate: list[dict], month_label: str) -> str:
     total_spend = sum(abs(row["total"]) for row in aggregate)
     prompt = (
         "أنت مساعد مالي شخصي. اكتب تقريراً شهرياً موجزاً بالعربية (فقرة أو فقرتين ثم نقاط) "
-        "بالاعتماد فقط على البيانات المجمّعة التالية. لا تخترع أي أرقام غير موجودة هنا.\n\n"
+        "بالاعتماد فقط على البيانات المجمّعة التالية. لا تخترع أي أرقام غير موجودة هنا. "
+        "لا تستخدم الرموز التعبيرية (emoji).\n\n"
         f"الشهر: {month_label}\n"
         f"إجمالي الصرف: {total_spend:.2f} ريال\n"
         "الصرف حسب الفئة:\n" + _format_aggregate_lines(aggregate)
@@ -82,13 +83,48 @@ def generate_report(aggregate: list[dict], month_label: str) -> str:
     return _generate(prompt)
 
 
-def answer_chat(aggregate: list[dict], message: str) -> str:
-    """Answer a free-text question about the user's spending, in Arabic."""
+def _format_context(ctx: dict) -> str:
+    parts: list[str] = []
+    parts.append(f"إجمالي الصرف: {ctx['total_spend']:.2f} ريال")
+    parts.append(f"إجمالي الدخل: {ctx['total_income']:.2f} ريال")
+
+    parts.append("\nالصرف حسب الفئة (كامل الفترة):")
+    parts.append(_format_aggregate_lines(ctx["by_category"]))
+
+    parts.append("\nالصرف حسب الشهر:")
+    parts.append("\n".join(f"- {m['month']}: {m['total']:.2f} ريال" for m in ctx["by_month"]))
+
+    parts.append("\nالصرف لكل شهر حسب الفئة:")
+    for month, items in ctx["by_month_category"].items():
+        line = "، ".join(f"{it['category']} {it['total']:.0f}" for it in items)
+        parts.append(f"- {month}: {line}")
+
+    if ctx["top_merchants"]:
+        parts.append("\nأعلى المتاجر إنفاقًا:")
+        parts.append(
+            "\n".join(
+                f"- {m['name']}: {m['total']:.2f} ريال ({m['count']} عملية)"
+                for m in ctx["top_merchants"]
+            )
+        )
+    return "\n".join(parts)
+
+
+def answer_chat(context: dict, message: str) -> str:
+    """Answer a free-text question about the user's spending, in Arabic.
+
+    ``context`` is the rich, already-aggregated grounding from the repository
+    (totals, per-category, per-month, per-month-per-category, top merchants).
+    """
     prompt = (
-        "أنت مساعد مالي شخصي. أجب عن سؤال المستخدم بالعربية بإيجاز ودقة، "
-        "بالاعتماد فقط على البيانات المجمّعة التالية. إن لم تكفِ البيانات للإجابة، قل ذلك بوضوح.\n\n"
-        "بيانات الصرف حسب الفئة (كامل الفترة المتاحة):\n"
-        + _format_aggregate_lines(aggregate)
+        "أنت مساعد مالي شخصي ذكي تتحدث بالعربية. أجب عن سؤال المستخدم بإيجاز ووضوح، "
+        "مستعيناً بالبيانات المجمّعة التالية عن إنفاقه. يمكنك: مقارنة الأشهر، تحليل الفئات، "
+        "تحديد أعلى المصاريف، وتقديم نصائح عملية للتوفير مبنية على هذه الأرقام. "
+        "استخدم الأرقام الفعلية من البيانات، ونسّق إجابتك بنقاط عند الحاجة (استخدم ** للتأكيد). "
+        "لا تستخدم الرموز التعبيرية (emoji) نهائياً. "
+        "لا تخترع أرقاماً أو أسماء غير موجودة. اعتذر فقط إذا كان السؤال خارج نطاق البيانات تماماً.\n\n"
+        "== بيانات المستخدم ==\n"
+        + _format_context(context)
         + f"\n\nسؤال المستخدم: {message}"
     )
     return _generate(prompt)

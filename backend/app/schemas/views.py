@@ -11,14 +11,16 @@ from pydantic import BaseModel
 
 
 class TransactionOut(BaseModel):
-    name: str          # merchant (or raw fallback when unknown)
+    name: str          # display name (merchant / intent), raw fallback when unknown
     raw: str
     cat: str           # Arabic category label
     city: str
     date: str
-    amt: float
+    amt: float         # signed: negative = spend, positive = income
     acc: int           # confidence percent
     resolved: bool
+    type: str = "purchase"   # purchase|transfer|income|cash
+    income: bool = False     # inflow (amount > 0)
 
 
 class BreakdownSlice(BaseModel):

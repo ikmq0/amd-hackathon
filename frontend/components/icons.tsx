@@ -183,6 +183,70 @@ export const Icon = {
         <path d="M9.5 20v-6h5v6" />
       </>,
     ),
+  car: () =>
+    S(
+      <>
+        <path d="M3 13l2-5.5A2 2 0 017 6h10a2 2 0 011.9 1.5L21 13v5h-2v-2H5v2H3v-5z" />
+        <circle cx="7.5" cy="16" r="1.2" />
+        <circle cx="16.5" cy="16" r="1.2" />
+      </>,
+    ),
+  plane: () =>
+    S(<path d="M21 15.5l-8-2V6.5a1.5 1.5 0 00-3 0V13.5l-8 2v2l8-1.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-3l8 1.5z" />),
+  book: () =>
+    S(
+      <>
+        <path d="M5 4h11a2 2 0 012 2v14H7a2 2 0 01-2-2V4z" />
+        <path d="M5 18a2 2 0 012-2h11" />
+      </>,
+    ),
+  heart: () =>
+    S(<path d="M12 20s-7-4.5-9-9a4.5 4.5 0 018-3 4.5 4.5 0 018 3c-2 4.5-9 9-9 9z" />),
+  building: () =>
+    S(
+      <>
+        <path d="M5 21V5a1 1 0 011-1h9a1 1 0 011 1v16" />
+        <path d="M16 10h3a1 1 0 011 1v10" />
+        <path d="M8 8h2M8 12h2M8 16h2" />
+      </>,
+    ),
+  play: () =>
+    S(
+      <>
+        <rect x="3" y="5" width="18" height="14" rx="2.5" />
+        <path d="M10 9l5 3-5 3V9z" />
+      </>,
+    ),
+  cash: () =>
+    S(
+      <>
+        <rect x="2.5" y="6" width="19" height="12" rx="2" />
+        <circle cx="12" cy="12" r="2.5" />
+        <path d="M6 9v6M18 9v6" />
+      </>,
+    ),
+  health: () =>
+    S(
+      <>
+        <rect x="4" y="4" width="16" height="16" rx="4" />
+        <path d="M12 8v8M8 12h8" />
+      </>,
+    ),
+  transfer: () =>
+    S(
+      <>
+        <path d="M7 7h11l-3-3" />
+        <path d="M17 17H6l3 3" />
+      </>,
+    ),
+  income: () =>
+    S(
+      <>
+        <path d="M12 4v10" />
+        <path d="M8 10l4 4 4-4" />
+        <path d="M5 20h14" />
+      </>,
+    ),
   trend: () =>
     S(
       <>
@@ -200,19 +264,43 @@ export const Icon = {
     ),
 };
 
-// Arabic category label -> category icon.
+// Arabic category label -> category icon (covers the 15-category taxonomy).
 export function catIcon(cat: string) {
   switch (cat) {
     case "مطاعم":
+    case "مطاعم وطعام":
       return Icon.food();
     case "توصيل طعام":
       return Icon.food();
     case "تسوّق":
       return Icon.bag();
     case "بقالة":
+    case "بقالة وتموين":
       return Icon.cart();
     case "اتصالات":
       return Icon.signal();
+    case "نقل ووقود":
+      return Icon.car();
+    case "فواتير ومرافق":
+      return Icon.receipt();
+    case "صحة وصيدليات":
+      return Icon.health();
+    case "ترفيه واشتراكات":
+      return Icon.play();
+    case "سفر وطيران":
+      return Icon.plane();
+    case "تعليم":
+      return Icon.book();
+    case "خدمات حكومية":
+      return Icon.building();
+    case "صدقات وتبرعات":
+      return Icon.heart();
+    case "تحويلات":
+      return Icon.transfer();
+    case "دخل ورواتب":
+      return Icon.income();
+    case "سحب نقدي":
+      return Icon.cash();
     default:
       return Icon.store();
   }

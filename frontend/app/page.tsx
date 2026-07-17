@@ -23,8 +23,7 @@ export default function OverviewPage() {
         <div className="balance">
           <div className="balance-k">إجمالي مصاريفك هذا الشهر</div>
           <div className="balance-v">
-            {stats ? fmt0(stats.total_spend) : "…"}
-            <span>ر.س</span>
+            <span>ر.س</span> {stats ? fmt0(stats.total_spend) : "…"}
           </div>
         </div>
       </div>
@@ -66,7 +65,7 @@ export default function OverviewPage() {
               </Link>
             </div>
             <div className="card">
-              {recent ? <TxTable rows={recent} /> : <div className="skeleton">…تحميل</div>}
+              {recent ? <TxTable rows={recent} /> : <div className="skeleton">تحميل…</div>}
             </div>
           </div>
         </div>

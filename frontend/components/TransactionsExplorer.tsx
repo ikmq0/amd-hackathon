@@ -4,15 +4,19 @@ import { useEffect, useMemo, useState } from "react";
 
 import { catIcon, Icon } from "@/components/icons";
 import { api } from "@/lib/api";
-import type { CategoryOption, TransactionOut } from "@/lib/types";
+import type { CategoryOption, MonthOption, TransactionOut } from "@/lib/types";
 import { fmt2 } from "@/lib/useApi";
 
-// The full statement: every transaction, filterable by category + free-text search,
-// with the inline "correct" action (the engine's learning layer) on each row.
+// The full statement: every transaction, filterable by category + month + city +
+// free-text search, with the inline "correct" action (the engine's learning layer).
 export default function TransactionsExplorer() {
   const [rows, setRows] = useState<TransactionOut[] | null>(null);
   const [cats, setCats] = useState<CategoryOption[]>([]);
-  const [activeCat, setActiveCat] = useState<string>(""); // "" = all
+  const [months, setMonths] = useState<MonthOption[]>([]);
+  const [cities, setCities] = useState<string[]>([]);
+  const [activeCat, setActiveCat] = useState("");
+  const [month, setMonth] = useState("");
+  const [city, setCity] = useState("");
   const [search, setSearch] = useState("");
   const [editing, setEditing] = useState<string | null>(null);
   const [name, setName] = useState("");
@@ -21,19 +25,31 @@ export default function TransactionsExplorer() {
 
   const load = () =>
     api
-      .transactions({ category: activeCat || undefined, search: search || undefined, limit: 500 })
+      .transactions({
+        category: activeCat || undefined,
+        search: search || undefined,
+        month: month || undefined,
+        city: city || undefined,
+        limit: 1000,
+      })
       .then(setRows)
       .catch(() => setRows([]));
 
   useEffect(() => {
     api.categories().then(setCats).catch(() => setCats([]));
+    api
+      .transactionFilters()
+      .then((f) => {
+        setMonths(f.months);
+        setCities(f.cities);
+      })
+      .catch(() => {});
   }, []);
 
-  // Refetch whenever the category filter changes; search is debounced below.
   useEffect(() => {
     load();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeCat]);
+  }, [activeCat, month, city]);
 
   useEffect(() => {
     const id = window.setTimeout(load, 250);
@@ -41,11 +57,14 @@ export default function TransactionsExplorer() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
 
-  const total = useMemo(() => (rows ?? []).reduce((s, t) => s + t.amt, 0), [rows]);
+  const spend = useMemo(
+    () => (rows ?? []).filter((t) => !t.income).reduce((s, t) => s + Math.abs(t.amt), 0),
+    [rows],
+  );
 
   function openEditor(t: TransactionOut) {
     setEditing(t.raw);
-    setName(t.resolved ? t.name : "");
+    setName(t.name);
     setCatKey(cats.find((c) => c.label_ar === t.cat)?.key ?? cats[0]?.key ?? "");
   }
 
@@ -69,7 +88,7 @@ export default function TransactionsExplorer() {
         <div>
           <h2>كل العمليات</h2>
           <div className="sub">
-            {rows ? `${rows.length} عملية · ${fmt2(total)} ر.س` : "…تحميل"} · فلترة وتصحيح
+            {rows ? `${rows.length} عملية · صرف ر.س ${fmt2(spend)}` : "تحميل…"} · فلترة وتصحيح
           </div>
         </div>
       </div>
@@ -81,6 +100,25 @@ export default function TransactionsExplorer() {
           onChange={(e) => setSearch(e.target.value)}
           placeholder="ابحث باسم التاجر أو الوصف الخام…"
         />
+      </div>
+
+      <div className="tx-selects">
+        <select value={month} onChange={(e) => setMonth(e.target.value)}>
+          <option value="">كل الأشهر</option>
+          {months.map((m) => (
+            <option key={m.key} value={m.key}>
+              {m.label}
+            </option>
+          ))}
+        </select>
+        <select value={city} onChange={(e) => setCity(e.target.value)}>
+          <option value="">كل المدن</option>
+          {cities.map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div className="filters">
@@ -99,7 +137,7 @@ export default function TransactionsExplorer() {
       </div>
 
       {!rows ? (
-        <div className="skeleton">…تحميل</div>
+        <div className="skeleton">تحميل…</div>
       ) : rows.length === 0 ? (
         <div className="report-empty">لا توجد عمليات مطابقة لبحثك.</div>
       ) : (
@@ -111,11 +149,15 @@ export default function TransactionsExplorer() {
                 <div className="tx-mid">
                   <div className="tx-name">{t.resolved ? t.name : "تاجر غير معروف"}</div>
                   <div className="tx-cat">
-                    {t.cat} · {t.date} · {t.city}
+                    {t.cat} · {t.date}
+                    {t.city !== "—" ? ` · ${t.city}` : ""}
                   </div>
                 </div>
                 <div className="tx-side">
-                  <div className="tx-amt">{fmt2(t.amt)} ر.س</div>
+                  <div className={`tx-amt${t.income ? " in" : ""}`}>
+                    ر.س {t.income ? "+" : ""}
+                    {fmt2(Math.abs(t.amt))}
+                  </div>
                   <div className={`tx-acc${t.resolved ? "" : " unk"}`}>
                     {t.resolved ? `دقة ${t.acc}%` : "غير مؤكد"}
                   </div>
@@ -154,7 +196,7 @@ export default function TransactionsExplorer() {
                       onClick={() => save(t.raw)}
                       disabled={saving || !name.trim()}
                     >
-                      {saving ? "…حفظ" : "حفظ التصحيح"}
+                      {saving ? "حفظ…" : "حفظ التصحيح"}
                     </button>
                   </div>
                 </div>

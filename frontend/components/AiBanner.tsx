@@ -11,7 +11,7 @@ export function AiBanner() {
         <p>اسأل عن مصاريفك، فئات إنفاقك، أو اطلب نصيحة لتوفير المال — بإجابات مبنية على بياناتك الفعلية.</p>
       </div>
       <Link href="/assistant" className="btn btn-white">
-        {Icon.spark("ic ic-sm")} ابدأ المحادثة
+        ابدأ المحادثة
       </Link>
     </div>
   );

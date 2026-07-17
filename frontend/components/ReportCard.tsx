@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-import { Icon } from "@/components/icons";
 import { Markdown } from "@/components/Markdown";
 import { api } from "@/lib/api";
 import type { ReportResult } from "@/lib/types";
@@ -42,8 +41,7 @@ export default function ReportCard() {
           </div>
         </div>
         <button className="btn btn-primary btn-sm" onClick={generate} disabled={loading}>
-          {Icon.spark("ic-sm")}
-          {loading ? "…جارٍ التوليد" : report ? "تحديث" : "توليد التقرير"}
+          {loading ? "جارٍ التوليد…" : report ? "تحديث" : "توليد التقرير"}
         </button>
       </div>
 
@@ -55,7 +53,7 @@ export default function ReportCard() {
         </div>
       )}
 
-      {loading && !report && <div className="skeleton">…يكتب المساعد تقريرك</div>}
+      {loading && !report && <div className="skeleton">يكتب المساعد تقريرك…</div>}
 
       {report && (
         <div className="report-body">

@@ -217,6 +217,7 @@ a{text-decoration:none;color:inherit}
 .lg-dot{width:12px;height:12px;border-radius:4px;flex-shrink:0}
 .lg-name{color:var(--ink-2);font-weight:500}
 .lg-val{margin-inline-start:auto;font-weight:700;color:var(--ink);direction:ltr}
+.lg-cur{font-size:11px;font-weight:600;color:var(--muted)}
 .lg-pct{color:var(--muted);font-size:12.5px;min-width:40px;text-align:left}
 
 /* Advice */
@@ -298,7 +299,7 @@ a{text-decoration:none;color:inherit}
   .bottom-nav{display:none}
   .device{max-width:none;flex:1;background:transparent;box-shadow:none;min-height:100vh}
   .screen{overflow-y:visible;padding:0 0 48px}
-  .phead{max-width:1160px;margin:22px auto 0;border-radius:22px;padding:20px 34px}
+  .phead{max-width:1160px;margin:0 auto;border-radius:0 0 24px 24px;padding:26px 34px}
   .phead::after{display:none}
   .phead h1{font-size:26px}
   .phead p{font-size:14px;margin-top:5px}
@@ -380,6 +381,10 @@ a{text-decoration:none;color:inherit}
 .filters .f{transition:background .15s ease,color .15s ease}
 .tx-table .tx-row .correct-btn{padding:7px 9px;margin-inline-start:8px}
 .tx-table .tx-row .correct-btn .ic{margin:0}
+.tx-selects{display:flex;gap:8px;margin-bottom:12px}
+.tx-selects select{flex:1;min-width:0;font-family:inherit;font-size:13px;color:var(--ink);background:var(--fill);border:1px solid var(--line);border-radius:11px;padding:10px 12px;outline:none;cursor:pointer}
+.tx-selects select:focus{border-color:var(--brand)}
+.tx-amt.in{color:var(--pos)}
 
 .muted{color:var(--muted)}
 .skeleton{color:var(--muted-2);font-size:13px;padding:24px 0;text-align:center}

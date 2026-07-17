@@ -89,7 +89,7 @@ export default function DecodeShowcase() {
           <div className="col-label">بعد التوضيح</div>
           {loading || !res ? (
             <div className="result-card">
-              <div className="skeleton">…جارٍ التوضيح</div>
+              <div className="skeleton">جارٍ التوضيح…</div>
             </div>
           ) : res.resolved ? (
             <div className="result-card">

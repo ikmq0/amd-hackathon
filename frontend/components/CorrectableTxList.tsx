@@ -45,7 +45,7 @@ export default function CorrectableTxList({ limit = 8 }: { limit?: number }) {
     }
   }
 
-  if (!rows) return <div className="skeleton">…تحميل</div>;
+  if (!rows) return <div className="skeleton">تحميل…</div>;
 
   return (
     <div className="ba-list">
@@ -109,7 +109,7 @@ export default function CorrectableTxList({ limit = 8 }: { limit?: number }) {
                   onClick={() => save(t.raw)}
                   disabled={saving || !name.trim()}
                 >
-                  {saving ? "…حفظ" : "حفظ التصحيح"}
+                  {saving ? "حفظ…" : "حفظ التصحيح"}
                 </button>
               </div>
             </div>

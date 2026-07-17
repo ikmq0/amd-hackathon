@@ -87,7 +87,26 @@ export default function DashboardPage() {
                   onSelect={(k) => setSelectedMonth((prev) => (prev === k ? null : k))}
                 />
               ) : (
-                <div className="skeleton">…تحميل</div>
+                <div className="skeleton">تحميل…</div>
+              )}
+            </div>
+
+            <div className="sec-title">
+              <h2>نصائح تلقائية</h2>
+            </div>
+            <div className="card">
+              {ready ? (
+                advice.slice(0, 3).map((a, i) => (
+                  <div className="advice" key={i}>
+                    <div className="advice-ico">{Icon.bulb()}</div>
+                    <div>
+                      <b>{a.title}</b>
+                      <p>{a.body}</p>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className="skeleton">تحميل…</div>
               )}
             </div>
           </div>
@@ -111,7 +130,7 @@ export default function DashboardPage() {
               {donut ? (
                 <Donut data={donut} total={total} animKey={selectedMonth ?? "all"} />
               ) : (
-                <div className="skeleton">…تحميل</div>
+                <div className="skeleton">تحميل…</div>
               )}
             </div>
           </div>
@@ -121,25 +140,6 @@ export default function DashboardPage() {
           <h2>تقريرك الذكي</h2>
         </div>
         <ReportCard />
-
-        <div className="sec-title">
-          <h2>نصائح تلقائية</h2>
-        </div>
-        <div className="card">
-          {ready ? (
-            advice.slice(0, 3).map((a, i) => (
-              <div className="advice" key={i}>
-                <div className="advice-ico">{Icon.bulb()}</div>
-                <div>
-                  <b>{a.title}</b>
-                  <p>{a.body}</p>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="skeleton">…تحميل</div>
-          )}
-        </div>
       </div>
     </>
   );

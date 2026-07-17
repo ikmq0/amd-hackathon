@@ -10,6 +10,7 @@ import type {
   MonthPoint,
   ReportResult,
   Stats,
+  TransactionFilters,
   TransactionOut,
 } from "./types";
 
@@ -49,14 +50,23 @@ export const api = {
     if (!res.ok) throw new Error(`decode -> ${res.status}`);
     return res.json();
   },
-  transactions: (params?: { category?: string; search?: string; limit?: number }) => {
+  transactions: (params?: {
+    category?: string;
+    search?: string;
+    limit?: number;
+    month?: string;
+    city?: string;
+  }) => {
     const q = new URLSearchParams();
     if (params?.category) q.set("category", params.category);
     if (params?.search) q.set("search", params.search);
     if (params?.limit) q.set("limit", String(params.limit));
+    if (params?.month) q.set("month", params.month);
+    if (params?.city) q.set("city", params.city);
     const qs = q.toString();
     return get<TransactionOut[]>(`/transactions${qs ? `?${qs}` : ""}`);
   },
+  transactionFilters: () => get<TransactionFilters>("/transactions/filters"),
   merchants: () => get<MerchantStats[]>("/merchants"),
   breakdown: (month?: string) =>
     get<BreakdownSlice[]>(
