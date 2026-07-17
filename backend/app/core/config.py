@@ -9,8 +9,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 BACKEND_DIR = Path(__file__).resolve().parents[2]  # .../backend
 DATA_DIR = BACKEND_DIR / "data"
-# Generated dataset from the AmadHackathon2026 (Khawarizm) scripts, one repo over.
-KHAWARIZM_DATA_DIR = BACKEND_DIR.parent / "AmadHackathon2026" / "data"
+# Generated dataset from the AmadHackathon2026 (Khawarizm) scripts, now moved to backend/data/khawarizm.
+KHAWARIZM_DATA_DIR = BACKEND_DIR / "data" / "khawarizm"
 
 
 class Settings(BaseSettings):
