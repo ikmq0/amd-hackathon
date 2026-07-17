@@ -1,0 +1,47 @@
+[project]
+name = "midd-backend"
+version = "0.1.0"
+description = "مِدْ (Midd) — Open Banking transaction decoding engine"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.136",
+    "uvicorn[standard]>=0.34",
+    "pydantic>=2.10",
+    "pydantic-settings>=2.6",
+    "sqlalchemy>=2.0.36",
+    "aiosqlite>=0.20",
+    "rapidfuzz>=3.14",
+    "pyarabic>=0.6.15",
+    "pyyaml>=6.0",
+    "google-genai>=1.0",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "httpx>=0.28",
+    "ruff>=0.8",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = [
+    "UP042",  # keep `str, Enum` (explicit, Pydantic-friendly) over StrEnum
+    "B008",   # Depends() in defaults is the idiomatic FastAPI pattern
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore::SyntaxWarning"]
+
+[tool.uv]
+package = false

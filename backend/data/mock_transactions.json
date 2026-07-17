@@ -1,0 +1,1052 @@
+[
+  {
+    "raw": "NAMSHI 4819 ONLINE",
+    "amount": 654.34,
+    "date": "2026-06-25",
+    "expected_merchant_id": "namshi",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "DOMINOSPIZZA_JED_4736",
+    "amount": 161.31,
+    "date": "2026-05-05",
+    "expected_merchant_id": "dominos",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "STYLI_ONLINE_TXN1413",
+    "amount": 570.44,
+    "date": "2026-07-10",
+    "expected_merchant_id": "styli",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "SHAWARMER_١٠٤٧_RUH",
+    "amount": 108.86,
+    "date": "2026-05-05",
+    "expected_merchant_id": "shawarmer",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "BARQPAY_0862_ONLINE",
+    "amount": 1721.92,
+    "date": "2026-03-14",
+    "expected_merchant_id": "barq",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "ALINMA 6811 DMM",
+    "amount": 2042.09,
+    "date": "2026-04-15",
+    "expected_merchant_id": "alinma",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "HUNGERST_RUH_TXN7676",
+    "amount": 143.07,
+    "date": "2026-06-13",
+    "expected_merchant_id": "hungerstation",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "DOMINOSPIZZA_8414_RUH",
+    "amount": 21.77,
+    "date": "2026-06-09",
+    "expected_merchant_id": "dominos",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "DUNKINDONUTS_RUH_TXN4033",
+    "amount": 34.06,
+    "date": "2026-07-15",
+    "expected_merchant_id": "dunkin",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "SHAWARMER 2244 RUH",
+    "amount": 147.84,
+    "date": "2026-05-15",
+    "expected_merchant_id": "shawarmer",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "OTHAIM*RUH_579",
+    "amount": 193.95,
+    "date": "2026-05-17",
+    "expected_merchant_id": "othaim",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "INMA_ONLINE_TXN6632",
+    "amount": 2385.07,
+    "date": "2026-05-23",
+    "expected_merchant_id": "alinma",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "TAMIMI_MARKETS_0229_RUH",
+    "amount": 391.63,
+    "date": "2026-07-08",
+    "expected_merchant_id": "tamimi",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "DANUBE 4118 JED",
+    "amount": 181.91,
+    "date": "2026-06-24",
+    "expected_merchant_id": "danube",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "NANA 3521 JED",
+    "amount": 145.08,
+    "date": "2026-06-21",
+    "expected_merchant_id": "nana",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "NAMSHI_POS_87801",
+    "amount": 265.66,
+    "date": "2026-03-02",
+    "expected_merchant_id": "namshi",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "POS662 STC JED",
+    "amount": 163.34,
+    "date": "2026-04-13",
+    "expected_merchant_id": "stc",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "MCDONALD_2175_JED",
+    "amount": 110.77,
+    "date": "2026-07-09",
+    "expected_merchant_id": "mcd",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "OTHAIM*DMM_720",
+    "amount": 415.33,
+    "date": "2026-06-28",
+    "expected_merchant_id": "othaim",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "URPAY*JED_009",
+    "amount": 1612.31,
+    "date": "2026-06-02",
+    "expected_merchant_id": "urpay",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "SA*MOBILY_688725",
+    "amount": 121.03,
+    "date": "2026-05-31",
+    "expected_merchant_id": "mobily",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "STYLI_1581_ONLINE",
+    "amount": 545.94,
+    "date": "2026-06-15",
+    "expected_merchant_id": "styli",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "INMA_PAY_9448_JED",
+    "amount": 676.41,
+    "date": "2026-03-11",
+    "expected_merchant_id": "alinma",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "PANDA_3321_RUH",
+    "amount": 478.9,
+    "date": "2026-04-25",
+    "expected_merchant_id": "panda",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "KUDU_POS_75869",
+    "amount": 83.79,
+    "date": "2026-06-29",
+    "expected_merchant_id": "kudu",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "CARREFOURSA_JED_TXN6383",
+    "amount": 217.35,
+    "date": "2026-07-15",
+    "expected_merchant_id": "carrefour",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "ZAINSA_8011_MKH",
+    "amount": 185.86,
+    "date": "2026-05-06",
+    "expected_merchant_id": "zain",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "POS416 PIZZA_HUT DMM",
+    "amount": 118.49,
+    "date": "2026-04-07",
+    "expected_merchant_id": "pizzahut",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "BURGER_KING_RUH_TXN3051",
+    "amount": 125.14,
+    "date": "2026-07-15",
+    "expected_merchant_id": "burgerking",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "SA*CENTRE_POINT_228851",
+    "amount": 369.61,
+    "date": "2026-06-29",
+    "expected_merchant_id": "centrepoint",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "PANDA-GE528-RUH",
+    "amount": 574.62,
+    "date": "2026-06-30",
+    "expected_merchant_id": "panda",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "IKEA_DMM_7550",
+    "amount": 366.4,
+    "date": "2026-06-14",
+    "expected_merchant_id": "ikea",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "BURGER_KING_RUH_6218",
+    "amount": 141.79,
+    "date": "2026-05-16",
+    "expected_merchant_id": "burgerking",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "DOMINOSPIZZA_1146_RUH",
+    "amount": 156.17,
+    "date": "2026-06-18",
+    "expected_merchant_id": "dominos",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "STYLI_ONLINE_TXN0533",
+    "amount": 714.53,
+    "date": "2026-06-12",
+    "expected_merchant_id": "styli",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "STCTEECOM_٨٤٦٣_RUH",
+    "amount": 288.15,
+    "date": "2026-06-29",
+    "expected_merchant_id": "stc",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "PANDAHYPER 7672 DMM",
+    "amount": 246.77,
+    "date": "2026-07-01",
+    "expected_merchant_id": "panda",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "SACO_RUH_TXN5830",
+    "amount": 48.73,
+    "date": "2026-07-07",
+    "expected_merchant_id": "saco",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "ZAINSA_9476_ONLINE",
+    "amount": 239.22,
+    "date": "2026-05-07",
+    "expected_merchant_id": "zain",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "BURGERKING 8986 RUH",
+    "amount": 24.74,
+    "date": "2026-07-15",
+    "expected_merchant_id": "burgerking",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "NOONECOM*ONLINE_586",
+    "amount": 707.45,
+    "date": "2026-06-15",
+    "expected_merchant_id": "noon",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "SACO_0873_JED",
+    "amount": 135.33,
+    "date": "2026-05-15",
+    "expected_merchant_id": "saco",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "BARQ_٩٤٨٠_JED",
+    "amount": 1294.53,
+    "date": "2026-04-22",
+    "expected_merchant_id": "barq",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "JAHEZAPP_٧٥١٤_DMM",
+    "amount": 51.9,
+    "date": "2026-05-02",
+    "expected_merchant_id": "jahez",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "AMZNMKTP_ONLINE_TXN6163",
+    "amount": 178.83,
+    "date": "2026-06-24",
+    "expected_merchant_id": "amazon",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "CENTRE_POINT_JED_9586",
+    "amount": 807.98,
+    "date": "2026-06-16",
+    "expected_merchant_id": "centrepoint",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "MOBILY_ONLINE_3843",
+    "amount": 260.51,
+    "date": "2026-05-29",
+    "expected_merchant_id": "mobily",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "herfi_JED_2901",
+    "amount": 32.96,
+    "date": "2026-07-15",
+    "expected_merchant_id": "herfy",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "JAHEZ_DLVR_9796_RUH",
+    "amount": 41.51,
+    "date": "2026-04-17",
+    "expected_merchant_id": "jahez",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "STC_TELECOM_POS_39282",
+    "amount": 228.04,
+    "date": "2026-07-12",
+    "expected_merchant_id": "stc",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "ALOTHAIM-DMM-4895-CHX",
+    "amount": 137.89,
+    "date": "2026-07-14",
+    "expected_merchant_id": "othaim",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "tammimi_RUH_1832",
+    "amount": 437.88,
+    "date": "2026-06-27",
+    "expected_merchant_id": "tamimi",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "STCPAY 6159 DMM",
+    "amount": 259.18,
+    "date": "2026-06-01",
+    "expected_merchant_id": "stcpay",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "MRSOOL*RUH_254",
+    "amount": 107.11,
+    "date": "2026-05-28",
+    "expected_merchant_id": "mrsool",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "NESTOHYPER_POS_57662",
+    "amount": 229.22,
+    "date": "2026-03-14",
+    "expected_merchant_id": "nesto",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "BAIK_POS_18644",
+    "amount": 127.48,
+    "date": "2026-07-15",
+    "expected_merchant_id": "albaik",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "CAARREFOUR-9854-TERM353",
+    "amount": 112.49,
+    "date": "2026-05-24",
+    "expected_merchant_id": "carrefour",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "POS648 SACO RUH",
+    "amount": 801.69,
+    "date": "2026-01-22",
+    "expected_merchant_id": "saco",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "HERFI_TL165_JED",
+    "amount": 127.77,
+    "date": "2026-06-28",
+    "expected_merchant_id": "herfy",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "MRSOOL_RUH_TXN1219",
+    "amount": 80.61,
+    "date": "2026-06-27",
+    "expected_merchant_id": "mrsool",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "STC_POS_39260",
+    "amount": 93.5,
+    "date": "2026-05-31",
+    "expected_merchant_id": "stc",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "NESTOHYPER_RUH_TXN3161",
+    "amount": 446.78,
+    "date": "2026-03-22",
+    "expected_merchant_id": "nesto",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "KENTUCKY_JED_1692",
+    "amount": 90.46,
+    "date": "2026-07-15",
+    "expected_merchant_id": "kfc",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "KUDU_RUH_TXN2681",
+    "amount": 24.87,
+    "date": "2026-06-26",
+    "expected_merchant_id": "kudu",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "MOBILY_JED_TXN7659",
+    "amount": 295.12,
+    "date": "2026-07-15",
+    "expected_merchant_id": "mobily",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "sbux_RUH_3028",
+    "amount": 65.39,
+    "date": "2026-02-22",
+    "expected_merchant_id": "starbucks",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "MCDONALDS_JED_TXN9651",
+    "amount": 53.98,
+    "date": "2026-02-16",
+    "expected_merchant_id": "mcd",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "SACO*JED_230",
+    "amount": 596.15,
+    "date": "2026-06-25",
+    "expected_merchant_id": "saco",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "EXTRASTORES_DMM_2824",
+    "amount": 381.37,
+    "date": "2026-06-21",
+    "expected_merchant_id": "extra",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "POS252 TO_YOU RUH",
+    "amount": 97.71,
+    "date": "2026-02-10",
+    "expected_merchant_id": "toyou",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "SUB_WAY_JED_3152",
+    "amount": 28.83,
+    "date": "2026-07-08",
+    "expected_merchant_id": "subway",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "NESTO_1274_RUH",
+    "amount": 200.46,
+    "date": "2026-05-15",
+    "expected_merchant_id": "nesto",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "DD-0084-TERM840",
+    "amount": 178.04,
+    "date": "2026-06-28",
+    "expected_merchant_id": "dunkin",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "SUB_WY-7734-TERM540",
+    "amount": 111.12,
+    "date": "2026-03-24",
+    "expected_merchant_id": "subway",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "LULU_DMM_TXN7262",
+    "amount": 340.22,
+    "date": "2026-06-29",
+    "expected_merchant_id": "lulu",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "TO_YYOU-RUH-3640-HRN",
+    "amount": 33.46,
+    "date": "2026-03-14",
+    "expected_merchant_id": "toyou",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "POS024 NANA JED",
+    "amount": 150.69,
+    "date": "2026-06-16",
+    "expected_merchant_id": "nana",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "NAMSHI*ONLINE_408",
+    "amount": 651.65,
+    "date": "2026-07-02",
+    "expected_merchant_id": "namshi",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "CENTRE_POINT_POS_51609",
+    "amount": 166.85,
+    "date": "2026-06-19",
+    "expected_merchant_id": "centrepoint",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "STCPAY 2672 ONLINE",
+    "amount": 76.72,
+    "date": "2026-04-09",
+    "expected_merchant_id": "stcpay",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "KUDU_POS_05329",
+    "amount": 50.93,
+    "date": "2026-07-08",
+    "expected_merchant_id": "kudu",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "KETUCKY_1727_TERM155",
+    "amount": 108.74,
+    "date": "2026-05-08",
+    "expected_merchant_id": "kfc",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "DD_3536_JED",
+    "amount": 175.63,
+    "date": "2026-07-09",
+    "expected_merchant_id": "dunkin",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "NOONECM_PU380_ONLINE",
+    "amount": 395.33,
+    "date": "2026-06-06",
+    "expected_merchant_id": "noon",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "JARIR_BOOK_3784_RUH",
+    "amount": 178.68,
+    "date": "2026-07-07",
+    "expected_merchant_id": "jarir",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "SUB_WAY_RUH_TXN1574",
+    "amount": 95.92,
+    "date": "2026-05-14",
+    "expected_merchant_id": "subway",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "DANUB_٤٢٩٤_JED",
+    "amount": 102.65,
+    "date": "2026-07-09",
+    "expected_merchant_id": "danube",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "POS296 BAIK MKH",
+    "amount": 88.84,
+    "date": "2026-04-30",
+    "expected_merchant_id": "albaik",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "LULU_HYPER_POS_99124",
+    "amount": 431.25,
+    "date": "2026-07-15",
+    "expected_merchant_id": "lulu",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "LULU_HYPER_DMM_4737",
+    "amount": 549.99,
+    "date": "2026-07-11",
+    "expected_merchant_id": "lulu",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "NOON_SA_ONLINE_TXN0433",
+    "amount": 106.35,
+    "date": "2026-05-16",
+    "expected_merchant_id": "noon",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "HERFI_JED_5851",
+    "amount": 134.16,
+    "date": "2026-05-31",
+    "expected_merchant_id": "herfy",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "STCPAY_ONLINE_TXN7636",
+    "amount": 253.09,
+    "date": "2026-05-27",
+    "expected_merchant_id": "stcpay",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "AMAZON_ONLINE_9986",
+    "amount": 839.49,
+    "date": "2026-04-29",
+    "expected_merchant_id": "amazon",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "DANUB_JED_5148",
+    "amount": 272.55,
+    "date": "2026-07-07",
+    "expected_merchant_id": "danube",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "POS406 AMZNMKTP ONLINE",
+    "amount": 248.73,
+    "date": "2026-04-28",
+    "expected_merchant_id": "amazon",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "SHAWARMER_5039_RUH",
+    "amount": 72.24,
+    "date": "2026-06-26",
+    "expected_merchant_id": "shawarmer",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "MOBILY_MKH_0098",
+    "amount": 280.84,
+    "date": "2026-06-21",
+    "expected_merchant_id": "mobily",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "JARIR_DMM_2638",
+    "amount": 207.73,
+    "date": "2026-05-12",
+    "expected_merchant_id": "jarir",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "PIZZA_HUT_POS_82595",
+    "amount": 71.52,
+    "date": "2026-07-04",
+    "expected_merchant_id": "pizzahut",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "KENTUCKY_DMM_0297",
+    "amount": 89.91,
+    "date": "2026-03-10",
+    "expected_merchant_id": "kfc",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "UR_PAY*JED_073",
+    "amount": 2876.67,
+    "date": "2026-05-18",
+    "expected_merchant_id": "urpay",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "POS870 MROOL RUH",
+    "amount": 46.11,
+    "date": "2026-04-01",
+    "expected_merchant_id": "mrsool",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "IKEA 9415 JED",
+    "amount": 632.21,
+    "date": "2026-06-26",
+    "expected_merchant_id": "ikea",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "EXTRASTORES 2830 DMM",
+    "amount": 396.39,
+    "date": "2026-02-25",
+    "expected_merchant_id": "extra",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "MCDONALDS*DMM_455",
+    "amount": 92.86,
+    "date": "2026-05-17",
+    "expected_merchant_id": "mcd",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "STYLI_POS_08099",
+    "amount": 280.86,
+    "date": "2026-07-15",
+    "expected_merchant_id": "styli",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "SA*STARBUCKS_225871",
+    "amount": 182.63,
+    "date": "2026-06-17",
+    "expected_merchant_id": "starbucks",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "ALBAIK_٩٣٥٩_MKH",
+    "amount": 124.49,
+    "date": "2026-02-28",
+    "expected_merchant_id": "albaik",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "ZAIN_ONLINE_TXN0856",
+    "amount": 259.49,
+    "date": "2026-06-19",
+    "expected_merchant_id": "zain",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "SHAWARMER_1016_RUH",
+    "amount": 172.03,
+    "date": "2026-07-13",
+    "expected_merchant_id": "shawarmer",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "DD_RUH_TXN6093",
+    "amount": 38.95,
+    "date": "2026-05-15",
+    "expected_merchant_id": "dunkin",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "POS127 BAIK MKH",
+    "amount": 122.64,
+    "date": "2026-06-04",
+    "expected_merchant_id": "albaik",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "caarrefoursa_JED_7376",
+    "amount": 461.0,
+    "date": "2026-07-15",
+    "expected_merchant_id": "carrefour",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "URPAY_7303_MKH",
+    "amount": 831.49,
+    "date": "2026-06-14",
+    "expected_merchant_id": "urpay",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "UR_PAY_POS_85574",
+    "amount": 580.58,
+    "date": "2026-05-23",
+    "expected_merchant_id": "urpay",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "SA*CAREFOUR_317810",
+    "amount": 64.33,
+    "date": "2026-06-03",
+    "expected_merchant_id": "carrefour",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "KFC_BW541_JED",
+    "amount": 76.93,
+    "date": "2026-07-12",
+    "expected_merchant_id": "kfc",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "HS*JED_660",
+    "amount": 90.68,
+    "date": "2026-05-07",
+    "expected_merchant_id": "hungerstation",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "JARIR_BOOK_JED_TXN4422",
+    "amount": 46.63,
+    "date": "2026-07-06",
+    "expected_merchant_id": "jarir",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "HS 9125 JED",
+    "amount": 109.71,
+    "date": "2026-06-27",
+    "expected_merchant_id": "hungerstation",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "pandahyyper_JED_6475",
+    "amount": 256.98,
+    "date": "2026-07-06",
+    "expected_merchant_id": "panda",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "IKEA_7217_DMM",
+    "amount": 932.51,
+    "date": "2026-06-28",
+    "expected_merchant_id": "ikea",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "JAHEZ_DLVR_DMM_TXN2434",
+    "amount": 49.12,
+    "date": "2026-05-29",
+    "expected_merchant_id": "jahez",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "EXTRASTORES_0722_JED",
+    "amount": 507.92,
+    "date": "2026-07-04",
+    "expected_merchant_id": "extra",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "ZAINSA_5182_RUH",
+    "amount": 82.37,
+    "date": "2026-03-04",
+    "expected_merchant_id": "zain",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "NANA-RUH-9941-ACG",
+    "amount": 32.75,
+    "date": "2026-06-17",
+    "expected_merchant_id": "nana",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "PHUT_DMM_TXN8962",
+    "amount": 55.42,
+    "date": "2026-06-18",
+    "expected_merchant_id": "pizzahut",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "MCD_POS_52145",
+    "amount": 163.87,
+    "date": "2026-05-26",
+    "expected_merchant_id": "mcd",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "AMZN_SA_٦٩١٣_ONLINE",
+    "amount": 761.3,
+    "date": "2026-03-21",
+    "expected_merchant_id": "amazon",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "EXTRA_DMM_TXN2175",
+    "amount": 937.91,
+    "date": "2026-05-15",
+    "expected_merchant_id": "extra",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "TO_YOU_1889_RUH",
+    "amount": 90.11,
+    "date": "2026-06-29",
+    "expected_merchant_id": "toyou",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "MRSOOL_POS_37454",
+    "amount": 144.78,
+    "date": "2026-07-04",
+    "expected_merchant_id": "mrsool",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "POS346 ABDULLAH_OTHAIM RUH",
+    "amount": 131.55,
+    "date": "2026-06-04",
+    "expected_merchant_id": "othaim",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "TAMIMI_MARKETS_4352_RUH",
+    "amount": 182.7,
+    "date": "2026-07-07",
+    "expected_merchant_id": "tamimi",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "JARIRBOOK_RUH_TXN5590",
+    "amount": 679.01,
+    "date": "2026-06-15",
+    "expected_merchant_id": "jarir",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "BARQ_ONLINE_7612",
+    "amount": 1378.26,
+    "date": "2026-06-11",
+    "expected_merchant_id": "barq",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "STC_PAY*JED_611",
+    "amount": 280.64,
+    "date": "2026-04-09",
+    "expected_merchant_id": "stcpay",
+    "expected_category": "TELECOM"
+  },
+  {
+    "raw": "BARQ_POS_04335",
+    "amount": 1869.07,
+    "date": "2026-06-25",
+    "expected_merchant_id": "barq",
+    "expected_category": "TRANSFER"
+  },
+  {
+    "raw": "NAMSHI_POS_20259",
+    "amount": 542.89,
+    "date": "2026-03-21",
+    "expected_merchant_id": "namshi",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "BURGER_KING_RUH_TXN9240",
+    "amount": 96.18,
+    "date": "2026-04-29",
+    "expected_merchant_id": "burgerking",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "CPOINT_RUH_6658",
+    "amount": 451.18,
+    "date": "2026-07-15",
+    "expected_merchant_id": "centrepoint",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "HUNGERSTATION_٥١٧١_JED",
+    "amount": 47.08,
+    "date": "2026-04-15",
+    "expected_merchant_id": "hungerstation",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "POS351 LULU RUH",
+    "amount": 318.26,
+    "date": "2026-07-09",
+    "expected_merchant_id": "lulu",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "DOMINO 1046 RUH",
+    "amount": 184.31,
+    "date": "2026-06-16",
+    "expected_merchant_id": "dominos",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "NOON_POS_84443",
+    "amount": 805.07,
+    "date": "2026-04-25",
+    "expected_merchant_id": "noon",
+    "expected_category": "SHOPPING"
+  },
+  {
+    "raw": "SA*TAMIMI_MARKETS_594013",
+    "amount": 301.07,
+    "date": "2026-05-21",
+    "expected_merchant_id": "tamimi",
+    "expected_category": "GROCERY"
+  },
+  {
+    "raw": "JAHEZ*DMM_124",
+    "amount": 160.15,
+    "date": "2026-07-15",
+    "expected_merchant_id": "jahez",
+    "expected_category": "FOOD_DELIVERY"
+  },
+  {
+    "raw": "STARBUCKS 2868 DMM",
+    "amount": 154.79,
+    "date": "2026-05-09",
+    "expected_merchant_id": "starbucks",
+    "expected_category": "RESTAURANT"
+  },
+  {
+    "raw": "PIZZA_HUT 5786 DMM",
+    "amount": 46.88,
+    "date": "2026-05-24",
+    "expected_merchant_id": "pizzahut",
+    "expected_category": "RESTAURANT"
+  }
+]

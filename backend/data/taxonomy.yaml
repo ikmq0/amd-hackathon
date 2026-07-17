@@ -1,0 +1,24 @@
+# Category taxonomy — mirrors app/schemas/category.py (source of truth is the enum).
+# Add-only: never rename/remove an existing key.
+categories:
+  - key: RESTAURANT
+    label_ar: مطاعم
+    label_en: Restaurants
+  - key: FOOD_DELIVERY
+    label_ar: توصيل طعام
+    label_en: Food Delivery
+  - key: SHOPPING
+    label_ar: تسوّق
+    label_en: Shopping
+  - key: GROCERY
+    label_ar: بقالة
+    label_en: Groceries
+  - key: TELECOM
+    label_ar: اتصالات
+    label_en: Telecom
+  - key: TRANSFER
+    label_ar: تحويلات
+    label_en: Transfers
+  - key: OTHER
+    label_ar: أخرى
+    label_en: Other

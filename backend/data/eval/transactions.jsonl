@@ -1,0 +1,135 @@
+{"raw": "LULUHYPER-DMM-8138-MTL", "expected_merchant_id": "lulu", "expected_category": "GROCERY"}
+{"raw": "carrefour_DMM_3312", "expected_merchant_id": "carrefour", "expected_category": "GROCERY"}
+{"raw": "NANA_BX741_JED", "expected_merchant_id": "nana", "expected_category": "FOOD_DELIVERY"}
+{"raw": "DOMINO-JED-4481-SGW", "expected_merchant_id": "dominos", "expected_category": "RESTAURANT"}
+{"raw": "SA*AL_BAIK_325381", "expected_merchant_id": "albaik", "expected_category": "RESTAURANT"}
+{"raw": "mcd_JED_4300", "expected_merchant_id": "mcd", "expected_category": "RESTAURANT"}
+{"raw": "STC_TELECOM-MKH-4488-XNU", "expected_merchant_id": "stc", "expected_category": "TELECOM"}
+{"raw": "NANA-JED-2661-CBP", "expected_merchant_id": "nana", "expected_category": "FOOD_DELIVERY"}
+{"raw": "NRXT_8127_SNT66", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "NANADIRECT-JED-0285-DVP", "expected_merchant_id": "nana", "expected_category": "FOOD_DELIVERY"}
+{"raw": "stcppay_JED_2983", "expected_merchant_id": "stcpay", "expected_category": "TELECOM"}
+{"raw": "PANDAHYPER-RUH-5188-ZDF", "expected_merchant_id": "panda", "expected_category": "GROCERY"}
+{"raw": "NESTOHYPER*WJ544*RUH", "expected_merchant_id": "nesto", "expected_category": "GROCERY"}
+{"raw": "HERRFI-RUH-2791-WKM", "expected_merchant_id": "herfy", "expected_category": "RESTAURANT"}
+{"raw": "POS435 STC ONLINE", "expected_merchant_id": "stc", "expected_category": "TELECOM"}
+{"raw": "INMA_E_PAY_8321_TERM528", "expected_merchant_id": "alinma", "expected_category": "TRANSFER"}
+{"raw": "GERU_7245_REH08", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "IKEA_٣٢٣٤_RUH", "expected_merchant_id": "ikea", "expected_category": "SHOPPING"}
+{"raw": "DAANUB-BW502-RUH", "expected_merchant_id": "danube", "expected_category": "GROCERY"}
+{"raw": "HUNGERSTATION 2777 TERM079", "expected_merchant_id": "hungerstation", "expected_category": "FOOD_DELIVERY"}
+{"raw": "SA*MRSOOL_572934", "expected_merchant_id": "mrsool", "expected_category": "FOOD_DELIVERY"}
+{"raw": "POS989 TOYOU RUH", "expected_merchant_id": "toyou", "expected_category": "FOOD_DELIVERY"}
+{"raw": "KUDU_9032_TERM020", "expected_merchant_id": "kudu", "expected_category": "RESTAURANT"}
+{"raw": "toyou_RUH_6678", "expected_merchant_id": "toyou", "expected_category": "FOOD_DELIVERY"}
+{"raw": "CENTREEPOINT 4275 TERM230", "expected_merchant_id": "centrepoint", "expected_category": "SHOPPING"}
+{"raw": "carrefoursa_DMM_2649", "expected_merchant_id": "carrefour", "expected_category": "GROCERY"}
+{"raw": "POS903 NASHI ONLINE", "expected_merchant_id": "namshi", "expected_category": "SHOPPING"}
+{"raw": "EHCJ_2900_DTZ51", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "POS855 NOON ONLINE", "expected_merchant_id": "noon", "expected_category": "SHOPPING"}
+{"raw": "HERI_٩٢٩٢_RUH", "expected_merchant_id": "herfy", "expected_category": "RESTAURANT"}
+{"raw": "SA*SHAWARMER_669411", "expected_merchant_id": "shawarmer", "expected_category": "RESTAURANT"}
+{"raw": "DANUBE_١٤٧٢_RUH", "expected_merchant_id": "danube", "expected_category": "GROCERY"}
+{"raw": "POS533 EXTRRASTORES DMM", "expected_merchant_id": "extra", "expected_category": "SHOPPING"}
+{"raw": "POS325 AL_BAAIK MKH", "expected_merchant_id": "albaik", "expected_category": "RESTAURANT"}
+{"raw": "MOBIILY-RUH-9156-RXY", "expected_merchant_id": "mobily", "expected_category": "TELECOM"}
+{"raw": "POS578 PANDAHYPER RUH", "expected_merchant_id": "panda", "expected_category": "GROCERY"}
+{"raw": "POS399 STYLI ONLINE", "expected_merchant_id": "styli", "expected_category": "SHOPPING"}
+{"raw": "POS916 CPINT JED", "expected_merchant_id": "centrepoint", "expected_category": "SHOPPING"}
+{"raw": "FQFF_3972_WKA42", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "jahez_dlvr_DMM_6610", "expected_merchant_id": "jahez", "expected_category": "FOOD_DELIVERY"}
+{"raw": "SYZS_4434_YJT12", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "POS082 STARBUCKS DMM", "expected_merchant_id": "starbucks", "expected_category": "RESTAURANT"}
+{"raw": "SA*STCTTELECOM_179323", "expected_merchant_id": "stc", "expected_category": "TELECOM"}
+{"raw": "POS650 NAAMSHI ONLINE", "expected_merchant_id": "namshi", "expected_category": "SHOPPING"}
+{"raw": "SHAWARMER-6257-TERM287", "expected_merchant_id": "shawarmer", "expected_category": "RESTAURANT"}
+{"raw": "KFC NK870 DMM", "expected_merchant_id": "kfc", "expected_category": "RESTAURANT"}
+{"raw": "UR_PAY-JED-3056-VZA", "expected_merchant_id": "urpay", "expected_category": "TRANSFER"}
+{"raw": "SA*IKEA_666845", "expected_merchant_id": "ikea", "expected_category": "SHOPPING"}
+{"raw": "amazon_ONLINE_9311", "expected_merchant_id": "amazon", "expected_category": "SHOPPING"}
+{"raw": "starbucks_RUH_8189", "expected_merchant_id": "starbucks", "expected_category": "RESTAURANT"}
+{"raw": "MRSOOL*WM521*JED", "expected_merchant_id": "mrsool", "expected_category": "FOOD_DELIVERY"}
+{"raw": "INMA_PAY_٦٧٩٢_JED", "expected_merchant_id": "alinma", "expected_category": "TRANSFER"}
+{"raw": "DUNKIN-1652-TERM669", "expected_merchant_id": "dunkin", "expected_category": "RESTAURANT"}
+{"raw": "STLI 6897 TERM152", "expected_merchant_id": "styli", "expected_category": "SHOPPING"}
+{"raw": "AL_BAIK 5804 TERM649", "expected_merchant_id": "albaik", "expected_category": "RESTAURANT"}
+{"raw": "UR_PAY_٣٧٤١_DMM", "expected_merchant_id": "urpay", "expected_category": "TRANSFER"}
+{"raw": "FNXV_3121_PHQ61", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "KUDU AB505 RUH", "expected_merchant_id": "kudu", "expected_category": "RESTAURANT"}
+{"raw": "HBTH_4024_EJB33", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "jahez_dlvr_DMM_1642", "expected_merchant_id": "jahez", "expected_category": "FOOD_DELIVERY"}
+{"raw": "SA*JARIR_BOOK_405786", "expected_merchant_id": "jarir", "expected_category": "SHOPPING"}
+{"raw": "HUNGERST_٨٠١٧_RUH", "expected_merchant_id": "hungerstation", "expected_category": "FOOD_DELIVERY"}
+{"raw": "DUNIN_4257_TERM540", "expected_merchant_id": "dunkin", "expected_category": "RESTAURANT"}
+{"raw": "POS975 TAMIMI_MARKEETS DMM", "expected_merchant_id": "tamimi", "expected_category": "GROCERY"}
+{"raw": "SA*STC_PAY_283143", "expected_merchant_id": "stcpay", "expected_category": "TELECOM"}
+{"raw": "SA*DUNKINDONUTS_275604", "expected_merchant_id": "dunkin", "expected_category": "RESTAURANT"}
+{"raw": "XTRA 3033 TERM793", "expected_merchant_id": "extra", "expected_category": "SHOPPING"}
+{"raw": "YJWT_1001_TKD86", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "STYLI_٣٤٧١_ONLINE", "expected_merchant_id": "styli", "expected_category": "SHOPPING"}
+{"raw": "ZAIN-MKH-4750-DDC", "expected_merchant_id": "zain", "expected_category": "TELECOM"}
+{"raw": "SUB_WAY_٧٦٢٤_JED", "expected_merchant_id": "subway", "expected_category": "RESTAURANT"}
+{"raw": "SA*NAMHI_326303", "expected_merchant_id": "namshi", "expected_category": "SHOPPING"}
+{"raw": "POS118 STC_PAY RUH", "expected_merchant_id": "stcpay", "expected_category": "TELECOM"}
+{"raw": "POS242 TAMIMI DMM", "expected_merchant_id": "tamimi", "expected_category": "GROCERY"}
+{"raw": "DOMINOS_١٢٤٩_RUH", "expected_merchant_id": "dominos", "expected_category": "RESTAURANT"}
+{"raw": "OTHAIIM-GK485-DMM", "expected_merchant_id": "othaim", "expected_category": "GROCERY"}
+{"raw": "MOBIILY*8993*TERM160", "expected_merchant_id": "mobily", "expected_category": "TELECOM"}
+{"raw": "BURGERKING 8854 TERM749", "expected_merchant_id": "burgerking", "expected_category": "RESTAURANT"}
+{"raw": "SA*ZAIN_472927", "expected_merchant_id": "zain", "expected_category": "TELECOM"}
+{"raw": "jarirbook_RUH_4615", "expected_merchant_id": "jarir", "expected_category": "SHOPPING"}
+{"raw": "LULUHYPER-3827-TERM615", "expected_merchant_id": "lulu", "expected_category": "GROCERY"}
+{"raw": "SA*DANUBE_946954", "expected_merchant_id": "danube", "expected_category": "GROCERY"}
+{"raw": "HS AG103 JED", "expected_merchant_id": "hungerstation", "expected_category": "FOOD_DELIVERY"}
+{"raw": "ZSEZ_0916_NAD00", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "SBUX_4424_TERM936", "expected_merchant_id": "starbucks", "expected_category": "RESTAURANT"}
+{"raw": "POS141 MOBILY RUH", "expected_merchant_id": "mobily", "expected_category": "TELECOM"}
+{"raw": "POS234 DOMINOS RUH", "expected_merchant_id": "dominos", "expected_category": "RESTAURANT"}
+{"raw": "NESTOHYPER_UF904_JED", "expected_merchant_id": "nesto", "expected_category": "GROCERY"}
+{"raw": "XTRA-RUH-4258-HFG", "expected_merchant_id": "extra", "expected_category": "SHOPPING"}
+{"raw": "SA*ZAIN_TOPUP_973746", "expected_merchant_id": "zain", "expected_category": "TELECOM"}
+{"raw": "POS003 PANDA_HYPER RUH", "expected_merchant_id": "panda", "expected_category": "GROCERY"}
+{"raw": "TXUD_6498_GQH54", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "GUWN_2736_MER17", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "POS695 BURGERKING JED", "expected_merchant_id": "burgerking", "expected_category": "RESTAURANT"}
+{"raw": "SUBWAAY*JB496*RUH", "expected_merchant_id": "subway", "expected_category": "RESTAURANT"}
+{"raw": "POS578 SACO RUH", "expected_merchant_id": "saco", "expected_category": "SHOPPING"}
+{"raw": "MRSOOL-JED-0695-TCJ", "expected_merchant_id": "mrsool", "expected_category": "FOOD_DELIVERY"}
+{"raw": "BURGER_KING 2928 TERM422", "expected_merchant_id": "burgerking", "expected_category": "RESTAURANT"}
+{"raw": "LULU_HYPER MR724 DMM", "expected_merchant_id": "lulu", "expected_category": "GROCERY"}
+{"raw": "POS952 PIZZAHUT DMM", "expected_merchant_id": "pizzahut", "expected_category": "RESTAURANT"}
+{"raw": "SA*KFC_398343", "expected_merchant_id": "kfc", "expected_category": "RESTAURANT"}
+{"raw": "POS070 AMAZON ONLINE", "expected_merchant_id": "amazon", "expected_category": "SHOPPING"}
+{"raw": "KENTUCKY-DMM-4714-PFR", "expected_merchant_id": "kfc", "expected_category": "RESTAURANT"}
+{"raw": "POS780 IKEA JED", "expected_merchant_id": "ikea", "expected_category": "SHOPPING"}
+{"raw": "saco_JED_1478", "expected_merchant_id": "saco", "expected_category": "SHOPPING"}
+{"raw": "POS942 BARQ JED", "expected_merchant_id": "barq", "expected_category": "TRANSFER"}
+{"raw": "inmapay_RUH_1131", "expected_merchant_id": "alinma", "expected_category": "TRANSFER"}
+{"raw": "SACO*EY840*JED", "expected_merchant_id": "saco", "expected_category": "SHOPPING"}
+{"raw": "MCD_9087_TERM766", "expected_merchant_id": "mcd", "expected_category": "RESTAURANT"}
+{"raw": "POS017 NOONECOM ONLINE", "expected_merchant_id": "noon", "expected_category": "SHOPPING"}
+{"raw": "TDAW_5955_CYT42", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "TOYOU_8926_TERM738", "expected_merchant_id": "toyou", "expected_category": "FOOD_DELIVERY"}
+{"raw": "shawamer_RUH_6262", "expected_merchant_id": "shawarmer", "expected_category": "RESTAURANT"}
+{"raw": "SA*MCDONALDS_717465", "expected_merchant_id": "mcd", "expected_category": "RESTAURANT"}
+{"raw": "NESO_١٢٩٢_JED", "expected_merchant_id": "nesto", "expected_category": "GROCERY"}
+{"raw": "NOON-ONLINE-0479-GAG", "expected_merchant_id": "noon", "expected_category": "SHOPPING"}
+{"raw": "POS222 CRF JED", "expected_merchant_id": "carrefour", "expected_category": "GROCERY"}
+{"raw": "urppay_RUH_1673", "expected_merchant_id": "urpay", "expected_category": "TRANSFER"}
+{"raw": "OTHAIM_٧٤٣٨_RUH", "expected_merchant_id": "othaim", "expected_category": "GROCERY"}
+{"raw": "BARQ-ONLINE-6093-CBN", "expected_merchant_id": "barq", "expected_category": "TRANSFER"}
+{"raw": "VJGF_0293_UYA87", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "SA*BARQ_534749", "expected_merchant_id": "barq", "expected_category": "TRANSFER"}
+{"raw": "SUB_WAY-2559-TERM056", "expected_merchant_id": "subway", "expected_category": "RESTAURANT"}
+{"raw": "tamimi_DMM_9973", "expected_merchant_id": "tamimi", "expected_category": "GROCERY"}
+{"raw": "SA*PIZZAHUT_342801", "expected_merchant_id": "pizzahut", "expected_category": "RESTAURANT"}
+{"raw": "POS613 AMAZOON ONLINE", "expected_merchant_id": "amazon", "expected_category": "SHOPPING"}
+{"raw": "ABDULLAH_OTHAIM_٢٧٨٥_RUH", "expected_merchant_id": "othaim", "expected_category": "GROCERY"}
+{"raw": "SA*CPOINT_376815", "expected_merchant_id": "centrepoint", "expected_category": "SHOPPING"}
+{"raw": "JARIR-DMM-9890-USG", "expected_merchant_id": "jarir", "expected_category": "SHOPPING"}
+{"raw": "kudu_DMM_9021", "expected_merchant_id": "kudu", "expected_category": "RESTAURANT"}
+{"raw": "SA*JAHEZAPP_121513", "expected_merchant_id": "jahez", "expected_category": "FOOD_DELIVERY"}
+{"raw": "EAHA_3662_MWK36", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "SA*PIZZA_HUT_794738", "expected_merchant_id": "pizzahut", "expected_category": "RESTAURANT"}
+{"raw": "PVKL_0053_ZJF40", "expected_merchant_id": null, "expected_category": "OTHER"}
+{"raw": "HERFY_٣١٥٣_RUH", "expected_merchant_id": "herfy", "expected_category": "RESTAURANT"}

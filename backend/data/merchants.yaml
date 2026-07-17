@@ -1,0 +1,418 @@
+# Saudi Merchant Directory — the CLOSED SET the engine matches against.
+# 40 major local brands. `patterns` are the tokens that appear inside raw POS/e-commerce
+# descriptors (strongest signal); `aliases` are alternate names/spellings (AR + EN) used by
+# the fuzzy tier. Curated + version-controlled (see MIDD_DIRECTORY_VERSION).
+
+# ---------- GROCERY (بقالة) ----------
+- id: panda
+  name_ar: بندة
+  name_en: Panda
+  category: GROCERY
+  patterns: [PANDA, PANDAHYPER, PANDA_HYPER, HYPERPANDA]
+  aliases: [هايبر بندة, بنده]
+  mcc: "5411"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+  brand_color: "#00843d"
+
+- id: carrefour
+  name_ar: كارفور
+  name_en: Carrefour
+  category: GROCERY
+  patterns: [CARREFOUR, CRF, CARREFOURSA]
+  aliases: [كارفور السعودية]
+  mcc: "5411"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+  brand_color: "#004e9f"
+
+- id: danube
+  name_ar: الدانوب
+  name_en: Danube
+  category: GROCERY
+  patterns: [DANUBE, DANUB]
+  aliases: [دانوب]
+  mcc: "5411"
+  city_hints: [JED, RUH]
+  channel: نقاط بيع
+
+- id: othaim
+  name_ar: أسواق العثيم
+  name_en: Othaim Markets
+  category: GROCERY
+  patterns: [OTHAIM, ALOTHAIM, ABDULLAH_OTHAIM]
+  aliases: [العثيم, عبدالله العثيم]
+  mcc: "5411"
+  city_hints: [RUH, DMM]
+  channel: نقاط بيع
+
+- id: lulu
+  name_ar: لولو
+  name_en: LuLu Hypermarket
+  category: GROCERY
+  patterns: [LULU, LULUHYPER, LULU_HYPER]
+  aliases: [لولو هايبر]
+  mcc: "5411"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+
+- id: tamimi
+  name_ar: أسواق التميمي
+  name_en: Tamimi Markets
+  category: GROCERY
+  patterns: [TAMIMI, TAMIMI_MARKETS]
+  aliases: [التميمي]
+  mcc: "5411"
+  city_hints: [RUH, DMM]
+  channel: نقاط بيع
+
+- id: nesto
+  name_ar: نستو
+  name_en: Nesto
+  category: GROCERY
+  patterns: [NESTO, NESTOHYPER]
+  aliases: [نستو هايبر]
+  mcc: "5411"
+  city_hints: [RUH, JED]
+  channel: نقاط بيع
+
+# ---------- RESTAURANT (مطاعم) ----------
+- id: mcd
+  name_ar: ماكدونالدز
+  name_en: McDonald's
+  category: RESTAURANT
+  patterns: [MCD, MCDONALDS, MACDONALD, MCDONALD]
+  aliases: [ماكدونالد, ماك]
+  mcc: "5814"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+  brand_color: "#c8102e"
+
+- id: kudu
+  name_ar: كودو
+  name_en: Kudu
+  category: RESTAURANT
+  patterns: [KUDU]
+  aliases: [كدو]
+  mcc: "5814"
+  city_hints: [RUH, DMM]
+  channel: نقاط بيع
+
+- id: herfy
+  name_ar: هرفي
+  name_en: Herfy
+  category: RESTAURANT
+  patterns: [HERFY, HERFI]
+  aliases: [هرفى]
+  mcc: "5814"
+  city_hints: [RUH, JED]
+  channel: نقاط بيع
+
+- id: albaik
+  name_ar: البيك
+  name_en: Al Baik
+  category: RESTAURANT
+  patterns: [ALBAIK, AL_BAIK, BAIK]
+  aliases: [البيك السعودية, بيك]
+  mcc: "5814"
+  city_hints: [JED, MKH]
+  channel: نقاط بيع
+
+- id: burgerking
+  name_ar: برجر كنج
+  name_en: Burger King
+  category: RESTAURANT
+  patterns: [BURGERKING, BK, BURGER_KING]
+  aliases: [برغر كنج]
+  mcc: "5814"
+  city_hints: [RUH, JED]
+  channel: نقاط بيع
+
+- id: kfc
+  name_ar: كنتاكي
+  name_en: KFC
+  category: RESTAURANT
+  patterns: [KFC, KENTUCKY]
+  aliases: [دجاج كنتاكي]
+  mcc: "5814"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+
+- id: dominos
+  name_ar: دومينوز
+  name_en: Domino's Pizza
+  category: RESTAURANT
+  patterns: [DOMINOS, DOMINO, DOMINOSPIZZA]
+  aliases: [دومينو]
+  mcc: "5814"
+  city_hints: [RUH, JED]
+  channel: نقاط بيع
+
+- id: pizzahut
+  name_ar: بيتزا هت
+  name_en: Pizza Hut
+  category: RESTAURANT
+  patterns: [PIZZAHUT, PIZZA_HUT, PHUT]
+  aliases: [بيتزاهت]
+  mcc: "5814"
+  city_hints: [RUH, DMM]
+  channel: نقاط بيع
+
+- id: subway
+  name_ar: صب واي
+  name_en: Subway
+  category: RESTAURANT
+  patterns: [SUBWAY, SUB_WAY]
+  aliases: [صبواي]
+  mcc: "5814"
+  city_hints: [RUH, JED]
+  channel: نقاط بيع
+
+- id: starbucks
+  name_ar: ستاربكس
+  name_en: Starbucks
+  category: RESTAURANT
+  patterns: [STARBUCKS, SBUX]
+  aliases: [ستار بكس]
+  mcc: "5814"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+
+- id: dunkin
+  name_ar: دنكن
+  name_en: Dunkin'
+  category: RESTAURANT
+  patterns: [DUNKIN, DUNKINDONUTS, DD]
+  aliases: [دانكن, دنكن دونتس]
+  mcc: "5814"
+  city_hints: [RUH, JED]
+  channel: نقاط بيع
+
+- id: shawarmer
+  name_ar: شاورمر
+  name_en: Shawarmer
+  category: RESTAURANT
+  patterns: [SHAWARMER]
+  aliases: [شورمر]
+  mcc: "5814"
+  city_hints: [RUH]
+  channel: نقاط بيع
+
+# ---------- FOOD_DELIVERY (توصيل طعام) ----------
+- id: jahez
+  name_ar: جاهز
+  name_en: Jahez
+  category: FOOD_DELIVERY
+  patterns: [JAHEZ, JAHEZ_DLVR, JAHEZAPP]
+  aliases: [جاهز للتوصيل]
+  mcc: "5812"
+  city_hints: [RUH, JED, DMM]
+  channel: تطبيق
+  brand_color: "#e5352b"
+
+- id: hungerstation
+  name_ar: هنقرستيشن
+  name_en: HungerStation
+  category: FOOD_DELIVERY
+  patterns: [HUNGERSTATION, HUNGERST, HS]
+  aliases: [هنقر ستيشن]
+  mcc: "5812"
+  city_hints: [RUH, JED]
+  channel: تطبيق
+  brand_color: "#ffb800"
+
+- id: mrsool
+  name_ar: مرسول
+  name_en: Mrsool
+  category: FOOD_DELIVERY
+  patterns: [MRSOOL]
+  aliases: [مرسال]
+  mcc: "5812"
+  city_hints: [RUH, JED]
+  channel: تطبيق
+
+- id: toyou
+  name_ar: تو يو
+  name_en: ToYou
+  category: FOOD_DELIVERY
+  patterns: [TOYOU, TO_YOU]
+  aliases: [تويو]
+  mcc: "5812"
+  city_hints: [RUH]
+  channel: تطبيق
+
+- id: nana
+  name_ar: نعناع
+  name_en: Nana
+  category: FOOD_DELIVERY
+  patterns: [NANA, NANADIRECT, NANA_DIRECT]
+  aliases: [نعناع دايركت]
+  mcc: "5411"
+  city_hints: [RUH, JED]
+  channel: تطبيق
+
+# ---------- SHOPPING (تسوّق) ----------
+- id: jarir
+  name_ar: مكتبة جرير
+  name_en: Jarir Bookstore
+  category: SHOPPING
+  patterns: [JARIR, JARIRBOOK, JARIR_BOOK]
+  aliases: [جرير]
+  mcc: "5943"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+  brand_color: "#1a2340"
+
+- id: noon
+  name_ar: نون
+  name_en: noon
+  category: SHOPPING
+  patterns: [NOON, NOONECOM, NOON_SA]
+  aliases: [نون دوت كوم]
+  mcc: "5399"
+  city_hints: [ONLINE]
+  channel: إنترنت
+  brand_color: "#feee00"
+
+- id: amazon
+  name_ar: أمازون السعودية
+  name_en: Amazon.sa
+  category: SHOPPING
+  patterns: [AMAZON, AMZN, AMZNSA, AMZN_SA, AMZNMKTP]
+  aliases: [امازون]
+  mcc: "5399"
+  city_hints: [ONLINE]
+  channel: إنترنت
+
+- id: extra
+  name_ar: إكسترا
+  name_en: eXtra
+  category: SHOPPING
+  patterns: [EXTRA, XTRA, EXTRASTORES]
+  aliases: [اكسترا]
+  mcc: "5732"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+
+- id: saco
+  name_ar: ساكو
+  name_en: SACO
+  category: SHOPPING
+  patterns: [SACO]
+  aliases: [ساكو هاردوير]
+  mcc: "5251"
+  city_hints: [RUH, JED]
+  channel: نقاط بيع
+
+- id: ikea
+  name_ar: ايكيا
+  name_en: IKEA
+  category: SHOPPING
+  patterns: [IKEA]
+  aliases: [آيكيا]
+  mcc: "5712"
+  city_hints: [RUH, JED, DMM]
+  channel: نقاط بيع
+
+- id: centrepoint
+  name_ar: سنتربوينت
+  name_en: Centrepoint
+  category: SHOPPING
+  patterns: [CENTREPOINT, CENTRE_POINT, CPOINT]
+  aliases: [سنتر بوينت]
+  mcc: "5651"
+  city_hints: [RUH, JED]
+  channel: نقاط بيع
+
+- id: namshi
+  name_ar: نمشي
+  name_en: Namshi
+  category: SHOPPING
+  patterns: [NAMSHI]
+  aliases: [نمشى]
+  mcc: "5651"
+  city_hints: [ONLINE]
+  channel: إنترنت
+
+- id: styli
+  name_ar: ستايلي
+  name_en: Styli
+  category: SHOPPING
+  patterns: [STYLI]
+  aliases: [ستايلى]
+  mcc: "5651"
+  city_hints: [ONLINE]
+  channel: إنترنت
+
+# ---------- TELECOM (اتصالات) ----------
+- id: stc
+  name_ar: STC
+  name_en: stc
+  category: TELECOM
+  patterns: [STC, STCTELECOM, STC_TELECOM]
+  aliases: [الاتصالات السعودية, اس تي سي]
+  mcc: "4814"
+  city_hints: []
+  channel: إنترنت
+
+- id: mobily
+  name_ar: موبايلي
+  name_en: Mobily
+  category: TELECOM
+  patterns: [MOBILY]
+  aliases: [موبايلى]
+  mcc: "4814"
+  city_hints: []
+  channel: إنترنت
+
+- id: zain
+  name_ar: زين
+  name_en: Zain
+  category: TELECOM
+  patterns: [ZAIN, ZAINSA, ZAIN_TOPUP]
+  aliases: [زين السعودية]
+  mcc: "4814"
+  city_hints: []
+  channel: محفظة
+
+- id: stcpay
+  name_ar: stc pay
+  name_en: stc pay
+  category: TELECOM
+  patterns: [STCPAY, STC_PAY]
+  aliases: [اس تي سي باي]
+  mcc: "4814"
+  city_hints: []
+  channel: محفظة
+  brand_color: "#4f008c"
+
+# ---------- TRANSFER (تحويلات) ----------
+- id: alinma
+  name_ar: الإنماء — تحويل إلكتروني
+  name_en: Alinma e-Transfer
+  category: TRANSFER
+  patterns: [INMA, ALINMA, INMAPAY, INMA_PAY, INMA_E_PAY]
+  aliases: [الانماء, مصرف الانماء]
+  mcc: "6012"
+  city_hints: []
+  channel: تحويل
+
+- id: urpay
+  name_ar: urpay
+  name_en: urpay
+  category: TRANSFER
+  patterns: [URPAY, UR_PAY]
+  aliases: [يور باي]
+  mcc: "6012"
+  city_hints: []
+  channel: محفظة
+
+- id: barq
+  name_ar: بارق
+  name_en: Barq
+  category: TRANSFER
+  patterns: [BARQ, BARQPAY]
+  aliases: [برق]
+  mcc: "6012"
+  city_hints: []
+  channel: محفظة
