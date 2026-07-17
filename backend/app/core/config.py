@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from pydantic import AliasChoices, Field
@@ -27,7 +28,13 @@ class Settings(BaseSettings):
     fuzzy_threshold: int = 82          # RapidFuzz score (0-100) to accept a fuzzy match
     directory_version: str = "1.0"     # bumped when merchants.yaml changes -> cache namespace
 
-    database_url: str = f"sqlite+aiosqlite:///{(BACKEND_DIR / 'midd.db').as_posix()}"
+    database_url: str = Field(
+        default_factory=lambda: (
+            "sqlite+aiosqlite:////tmp/midd.db"
+            if os.environ.get("VERCEL")
+            else f"sqlite+aiosqlite:///{(BACKEND_DIR / 'midd.db').as_posix()}"
+        ),
+    )
 
     # Which generated persona the dashboard is seeded from. The generated
     # transactions.csv is per-user; one user = one coherent personal statement.

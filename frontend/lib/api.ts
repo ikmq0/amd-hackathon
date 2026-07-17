@@ -14,7 +14,7 @@ import type {
   TransactionOut,
 } from "./types";
 
-const BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://127.0.0.1:8000";
+const BASE = process.env.NEXT_PUBLIC_API_BASE ?? "";
 
 async function get<T>(path: string): Promise<T> {
   const res = await fetch(`${BASE}${path}`, { cache: "no-store" });

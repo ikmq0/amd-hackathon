@@ -1,28 +1,66 @@
 {
-    "services": {
-        "frontend": {
-            "root": "frontend",
-            "framework": "nextjs"
-        },
-        "backend": {
-            "root": "backend",
-            "entrypoint": "app.main:app"
-        }
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/next"
     },
-    "rewrites": [
-        {
-            "source": "/api/backend(/.*)?",
-            "destination": {
-                "type": "service",
-                "service": "backend"
-            }
-        },
-        {
-            "source": "/(.*)",
-            "destination": {
-                "type": "service",
-                "service": "frontend"
-            }
-        }
-    ]
+    {
+      "src": "backend/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/decode(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/transactions(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/merchants(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/analytics(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/stats(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/health(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/report(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/chat(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/correct(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/categories(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/docs(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/openapi.json",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/$1"
+    }
+  ]
 }
