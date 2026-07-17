@@ -18,13 +18,12 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_prefix="MIDD_", extra="ignore")
 
     app_name: str = "مِدْ (Midd) API"
-    # Comma-free list via JSON in env, or defaults for local dev.
-    # On Vercel the VERCEL_URL env var is set automatically (e.g. "your-app.vercel.app").
+    # Configurable via MIDD_CORS_ORIGINS env var (JSON list, e.g. '["https://example.com"]').
+    # Falls back to Vercel auto-detect or localhost defaults when not set.
     cors_origins: list[str] = Field(
         default_factory=lambda: (
             [
                 f"https://{os.environ['VERCEL_URL']}",
-                # Vercel also generates per-commit preview URLs on the same project domain.
                 "https://*.vercel.app",
             ]
             if os.environ.get("VERCEL")
