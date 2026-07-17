@@ -45,3 +45,6 @@ filterwarnings = ["ignore::SyntaxWarning"]
 
 [tool.uv]
 package = false
+
+[tool.vercel]
+entrypoint = "app.main:app"
