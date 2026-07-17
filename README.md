@@ -64,7 +64,6 @@ Set `NEXT_PUBLIC_API_BASE` if the API is not on `127.0.0.1:8000`.
 ```
 backend/   FastAPI app (app/engine = the pipeline), data/, eval/, tests/
 frontend/  Next.js 16 dashboard (5 pages) — live decode box, KPIs from /stats
-dashboard/ original static HTML prototype (superseded by frontend/)
 ```
 
 ## API
