@@ -19,7 +19,18 @@ class Settings(BaseSettings):
 
     app_name: str = "مِدْ (Midd) API"
     # Comma-free list via JSON in env, or defaults for local dev.
-    cors_origins: list[str] = ["http://localhost:3000", "http://127.0.0.1:3000"]
+    # On Vercel the VERCEL_URL env var is set automatically (e.g. "your-app.vercel.app").
+    cors_origins: list[str] = Field(
+        default_factory=lambda: (
+            [
+                f"https://{os.environ['VERCEL_URL']}",
+                # Vercel also generates per-commit preview URLs on the same project domain.
+                "https://*.vercel.app",
+            ]
+            if os.environ.get("VERCEL")
+            else ["http://localhost:3000", "http://127.0.0.1:3000"]
+        ),
+    )
 
     # Simple demo auth. Empty string disables the check (dev default).
     api_key: str = ""
