@@ -23,7 +23,7 @@ export default function OverviewPage() {
         <div className="balance">
           <div className="balance-k">إجمالي مصاريفك هذا الشهر</div>
           <div className="balance-v">
-            <span>ر.س</span> {stats ? fmt0(stats.total_spend) : "…"}
+            {stats ? fmt0(stats.total_spend) : "…"} <span>ر.س</span>
           </div>
         </div>
       </div>

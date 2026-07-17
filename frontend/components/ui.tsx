@@ -42,9 +42,9 @@ export function Kpi({
       <div className="kpi-body">
         <div className="kpi-label">{label}</div>
         <div className="kpi-value">
-          {unit && <span className="unit">{unit}</span>}
-          {unit ? " " : null}
           {value}
+          {unit ? " " : null}
+          {unit && <span className="unit">{unit}</span>}
         </div>
       </div>
       {trend && <span className={`kpi-trend${flat ? " flat" : ""}`}>{trend}</span>}

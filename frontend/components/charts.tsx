@@ -71,7 +71,7 @@ export function Donut({
             <span className="lg-dot" style={{ background: d.color }} />
             <span className="lg-name">{d.name}</span>
             <span className="lg-val">
-              <span className="lg-cur">ر.س</span> {fmt0(d.val)}
+              {fmt0(d.val)} <span className="lg-cur">ر.س</span>
             </span>
             <span className="lg-pct">{Math.round((d.val / sum) * 100)}%</span>
           </li>

@@ -17,8 +17,9 @@ export function TxTable({ rows }: { rows: TransactionOut[] }) {
           </div>
           <div className="tx-side">
             <div className={`tx-amt${t.income ? " in" : ""}`}>
-              ر.س {t.income ? "+" : ""}
+              {t.income ? "+" : ""}
               {fmt2(Math.abs(t.amt))}
+              {" "}ر.س
             </div>
             <div className={`tx-acc${t.resolved ? "" : " unk"}`}>
               {t.resolved ? `دقة ${t.acc}%` : "غير مؤكد"}
